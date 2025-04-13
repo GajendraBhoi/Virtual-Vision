@@ -13,13 +13,19 @@ const Homepage = () => {
                 <div className="hidden md:flex gap-6 items-center text-sm font-medium">
                     <Link to="/" className="hover:text-blue-400 transition duration-200">Home</Link>
                     <Link to="/explore" className="hover:text-blue-400 transition duration-200">Explore</Link>
-                    <Link to="/community" className="hover:text-blue-400 transition duration-200">Community</Link>
+                    {/* <Link to="/community" className="hover:text-blue-400 transition duration-200">Community</Link> */}
                     <Link to="/support" className="hover:text-blue-400 transition duration-200">Support</Link>
                     <Link
                         to="/login"
                         className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition duration-200"
                     >
                         Sign In
+                    </Link>
+                    <Link
+                        to="/login"
+                        className="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-200 transition duration-200"
+                    >
+                        Sign Up
                     </Link>
                 </div>
             </nav>

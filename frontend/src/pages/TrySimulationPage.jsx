@@ -1,34 +1,42 @@
 import React from 'react';
 import { FaSearch, FaCompass } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const TrySimulationPage = () => {
     return (
-        <div className="min-h-screen flex items-center justify-center bg-blue-50 px-4">
-            <div className="bg-white shadow-2xl rounded-2xl w-full max-w-md p-6">
-                {/* Title */}
-                <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Tools</h2>
-
-                {/* Tools List */}
-                <div className="space-y-4">
-                    {/* OCR Tool */}
-                    <div className="flex items-center bg-blue-100 hover:bg-blue-200 cursor-pointer px-4 py-3 rounded-xl gap-3">
-                        <FaSearch className="text-lg text-black" />
-                        <span className="font-medium">OCR (Optical Character Recognition)</span>
-                    </div>
-
-                    {/* Barcode Scanner */}
-                    <div className="flex items-center bg-blue-100 hover:bg-blue-200 cursor-pointer px-4 py-3 rounded-xl gap-3">
-                        <span className="text-xl text-blue-600">條碼</span>
-                        <span className="font-medium">Barcode Scanner</span>
-                    </div>
-
-                    {/* Navigation */}
-                    <div className="flex items-center bg-blue-100 hover:bg-blue-200 cursor-pointer px-4 py-3 rounded-xl gap-3">
-                        <FaCompass className="text-xl text-gray-700" />
-                        <span className="font-medium">Navigation</span>
-                    </div>
-                </div>
+        <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center space-y-10 p-6">
+            {/* Eye Logo */}
+            <div className="text-6xl">
+                👁️
             </div>
+
+            {/* Title */}
+            <h1 className="text-3xl font-semibold text-gray-800">
+                VirtualVision
+            </h1>
+
+            {/* Navigation Buttons */}
+            <div className="flex flex-wrap justify-center gap-8 mt-6">
+                <Link to="/objectDetector" className="flex flex-col items-center bg-white shadow-md rounded-full p-6 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
+                    <span className="text-4xl">👁️</span>
+                    <span className="mt-2 text-sm font-medium">Start Assistant</span>
+                </Link>
+
+                <button className="flex flex-col items-center bg-white shadow-md rounded-full p-6 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
+                    <span className="text-4xl">🧰</span>
+                    <span className="mt-2 text-sm font-medium">Tools</span>
+                </button>
+
+                <Link to="/support" className="flex flex-col items-center bg-white shadow-md rounded-full p-6 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
+                    <span className="text-4xl">⚙️</span>
+                    <span className="mt-2 text-sm font-medium">Settings</span>
+                </Link>
+            </div>
+
+            {/* Emergency SOS Button */}
+            <button className="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold text-lg shadow-md hover:bg-red-700 transition transform hover:scale-105">
+                🔴 Emergency SOS
+            </button>
         </div>
     );
 };
