@@ -90,7 +90,7 @@ const ObjectDetector = () => {
 
     return (
         <div
-            className="relative w-full h-screen bg-gray-100"
+            className="relative w-full h-screen bg-gray-100 flex flex-wrap"
             onDoubleClick={handleDoubleClick} // Trigger on double-click
         >
             {/* Webcam View */}

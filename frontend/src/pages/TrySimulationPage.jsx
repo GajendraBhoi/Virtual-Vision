@@ -17,17 +17,17 @@ const TrySimulationPage = () => {
 
             {/* Navigation Buttons */}
             <div className="flex flex-wrap justify-center gap-8 mt-6">
-                <Link to="/objectDetector" className="flex flex-col items-center bg-white shadow-md rounded-full p-6 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
+                <Link to="/objectDetector" className="flex flex-col items-center bg-white shadow-md rounded-lg p-4 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
                     <span className="text-4xl">👁️</span>
                     <span className="mt-2 text-sm font-medium">Start Assistant</span>
                 </Link>
 
-                <button className="flex flex-col items-center bg-white shadow-md rounded-full p-6 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
+                <Link to="/tools" className="flex flex-col items-center bg-white shadow-md rounded-lg p-4 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
                     <span className="text-4xl">🧰</span>
                     <span className="mt-2 text-sm font-medium">Tools</span>
-                </button>
+                </Link>
 
-                <Link to="/support" className="flex flex-col items-center bg-white shadow-md rounded-full p-6 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
+                <Link to="/support" className="flex flex-col items-center bg-white shadow-md rounded-lg p-4 w-32 h-32 hover:shadow-xl transition transform hover:scale-105">
                     <span className="text-4xl">⚙️</span>
                     <span className="mt-2 text-sm font-medium">Settings</span>
                 </Link>
